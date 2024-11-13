@@ -17,7 +17,7 @@ int main() {
     }
 
     // Sunucu (alıcı) IP adresi ve port bilgilerini ayarlama
-    server.sin_addr.s_addr = inet_addr("192.168.135.139"); // Hedef IP adresi (Linux sanal makinesinin IP'si)
+    server.sin_addr.s_addr = inet_addr("RECEIVER_IP_ADDRESS"); // Hedef IP adresi (Linux sanal makinesinin IP'si)
     server.sin_family = AF_INET;                        // IPv4 protokolü kullanıldığını belirtir
     server.sin_port = htons(102);                       // Hedef port numarası, 102 GOOSE için yaygın olarak kullanılır
 
